@@ -40,4 +40,14 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.image_name.outputs.IMAGE_NAME }} 
+          tags: ${{ steps.image_name.outputs.IMAGE_NAME }}
+
+      - name: Déployer via Portainer Webhook
+        if: success()
+        env:
+          PORTAINER_WEBHOOK_URL: ${{ secrets.PORTAINER_WEBHOOK_URL }}
+        run: |
+          if [ -z "$PORTAINER_WEBHOOK_URL" ]; then
+            echo "PORTAINER_WEBHOOK_URL non défini dans les secrets GitHub !" && exit 1
+          fi
+          curl -X POST "$PORTAINER_WEBHOOK_URL" 
