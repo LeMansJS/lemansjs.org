@@ -33,6 +33,7 @@ const videoId = getYoutubeId(props.video)
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin: 0 auto;
 }
 .replay-thumb {
   width: 100%;
@@ -42,5 +43,18 @@ const videoId = getYoutubeId(props.video)
 .replay-info {
   padding: 1.2em;
   text-align: left;
+}
+@media (max-width: 700px) {
+  .replay-card {
+    width: 95vw;
+    min-width: 0;
+    max-width: 360px;
+  }
+  .replay-thumb {
+    height: 140px;
+  }
+  .replay-info {
+    padding: 1em;
+  }
 }
 </style> 

@@ -149,4 +149,15 @@
   margin-bottom: 0.5em;
   font-size: 1.05em;
 }
+@media (max-width: 900px) {
+  .about-page { max-width: 98vw; padding: 0 0.5em; }
+  .orga-gallery { gap: 1.5em; }
+}
+@media (max-width: 700px) {
+  .about-page { padding: 0 0.2em; }
+  .orga-profile { width: 100%; max-width: 220px; }
+  .orga-avatar { width: 80px; height: 80px; }
+  .orga-title, .about-page h2 { font-size: 1.1em; }
+  .orga-gallery { flex-direction: column; gap: 1em; }
+}
 </style> 

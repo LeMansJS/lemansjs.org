@@ -171,11 +171,18 @@ const replayRows = computed(() => {
 }
 @media (max-width: 900px) {
   .hero-content-flex { flex-direction: column; align-items: center; gap: 1em; }
-  .hero-content { max-width: 95vw; }
+  .hero-content { max-width: 95vw; margin: 2em auto; }
+  .sponsor-grid { gap: 1em; }
 }
 @media (max-width: 700px) {
   .logo { height: 32px; }
   .hero-content h2 { font-size: 1.2em; }
+  .hero-content { margin: 1.5em auto; padding: 0 0.5em; }
+  .section-title { font-size: 1.3em; }
+  .replay-grid { flex-direction: column; gap: 1em; }
+  .sponsor-section, .events-section, .replay-section { padding: 1.5em 0 1em 0; }
+  .sponsor-logo { height: 38px; max-width: 100px; }
+  .sponsor-grid { grid-template-columns: 1fr; gap: 0.7em; }
 }
 .events-section {
   background: #fff;
