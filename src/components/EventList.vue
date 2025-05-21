@@ -11,6 +11,7 @@ interface EventMeta {
     name: string
     address?: string
   }
+  meetup?: string
   [key: string]: any
 }
 
@@ -59,6 +60,7 @@ onMounted(() => {
             <p class="event-location">📍 {{ upcomingEvent.location?.name }}</p>
         </div>
         <p class="event-summary" v-if="upcomingEvent.summary">{{ upcomingEvent.summary }}</p>
+        <a v-if="upcomingEvent.meetup" :href="upcomingEvent.meetup" class="btn btn-primary" target="_blank" rel="noopener">Voir la page Meetup</a>
         </div>
 
         <div v-else class="event-empty">

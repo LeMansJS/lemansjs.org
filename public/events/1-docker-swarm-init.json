@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "title": "#01 - Initiation à Docker Swarm",
+    "date": "2025-05-27T18:00:00+02:00",
+    "location": {
+        "name": "EKOD, Le Mans",
+        "address": "185 Rue Henri Champion, 72100 Le Mans"
+    },
+    "summary": "Une session d'initiation à Docker Swarm pour découvrir l'orchestration de conteneurs. Au programme : déploiement de services, scaling, et gestion de clusters. Accessible aux débutants comme aux initiés. Rejoins-nous à EKOD pour une soirée technique conviviale et instructive !",
+    "meetup": ""
+}
