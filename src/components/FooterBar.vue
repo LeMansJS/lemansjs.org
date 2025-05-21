@@ -6,7 +6,6 @@
       </div>
       <div class="footer-links">
         <a href="https://www.meetup.com/fr-FR/lemansjs/" target="_blank">Meetup</a>
-        <a href="#">Twitter</a>
         <a href="mailto:contact@lemansjs.org">Contact</a>
       </div>
       <div class="footer-copy">
