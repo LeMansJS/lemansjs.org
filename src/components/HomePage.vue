@@ -36,7 +36,7 @@ const replayRows = computed(() => {
           <p>autour de JavaScript et de son écosystème</p>
           <div class="actions">
             <a href="https://www.meetup.com/fr-FR/lemansjs/" target="_blank" class="btn btn-primary">Rejoindre le meetup</a>
-            <router-link to="/evenements" class="btn btn-secondary">Voir les événements</router-link>
+            <a href="https://github.com/LeMansJS/talks" target="_blank" class="btn btn-secondary">Proposer un talk</a>
           </div>
         </div>
       </div>
